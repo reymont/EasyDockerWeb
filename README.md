@@ -12,6 +12,7 @@ A simple Web Ui for Docker using `xterm.js`, `Node.js` and `Socket.io`
 npm install -g yarn
 ### 保存到package.json
 npm i @kubernetes/client-node -save
+npm i kubernetes-client --save
 
 docker run -it -d -p 3000:3000 -v /var/run/docker.sock:/var/run/docker.sock qfdk/easydockerweb
 
