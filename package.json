@@ -6,6 +6,7 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "@kubernetes/client-node": "^0.3.0",
     "body-parser": "~1.18.2",
     "dockerode": "^2.5.4",
     "ejs": "^2.5.7",
