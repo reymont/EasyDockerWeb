@@ -6,5 +6,8 @@ var k8sApi = k8s.Config.defaultClient();
 k8sApi.listNamespacedPod('test01')
     .then((res) => {
         console.log(res.body);
-        // console.log(res.body.items);
+        var pods = res.body.items;
+        for(var i = 0;i<pods.length;i++){
+            console.log(pods[i].metadata.name);
+        }
     });
